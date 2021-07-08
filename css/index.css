@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 /********************** 글로벌 설정 *********************/
-html, body {font-family: 'Lato', sans-serif; color: #000; height: 10000px;}
+html, body {font-family: 'Lato', sans-serif; color: #000;}
 
 .wrapper {max-width: 800px; margin: 0 auto; padding: 4em 1em;}
 
@@ -83,7 +83,15 @@ html, body {font-family: 'Lato', sans-serif; color: #000; height: 10000px;}
 
 
 /********************** loc-wrapper *********************/
+.loc-wrapper .map-img {width: 100%;}
+
+
 /********************** footer-wrapper *********************/
+.footer-wrapper {text-align: center; color: #888; }
+.footer-wrapper .sns-wrap {display: flex; justify-content: center; margin-bottom: 1em; font-size: 1.25em;}
+.footer-wrapper .sns-wrap a {padding: 0 0.125em;}
+.footer-wrapper .sns-wrap a:hover {color: #ddd;}
+.footer-wrapper .copyright a {text-decoration: underline;}
 
 
 /********************** 반응형 설정 *********************/
