@@ -1,7 +1,18 @@
-/********************** 글로벌 설정 *********************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+/********************** 글로벌 설정 *********************/
+html, body {font-family: 'Lato', sans-serif; color: #000;}
+.wrapper {max-width: 800px; margin: 0 auto;}
 
 /********************** header-wrapper *********************/
+.header-wrapper {background-color: #000; color: #fff; box-shadow: 1px 3px 3px rgb(0, 0, 0 .5);}
+.header-wrapper .header-wrap {display: flex; justify-content: space-between; align-items: center;}
+.header-wrapper .navi-wrap {display: flex;}
+.header-wrapper .navi-wrap .navi {padding: 1em 1.5em; cursor: pointer;}
+.header-wrapper .navi-wrap .navi:hover {background-color: #bbb; color: #000;}
+.header-wrapper .search {padding: 1em 1.25em; cursor: pointer;}
+.header-wrapper .search:hover {background-color: #f44336; color: #fff;}
+
 /********************** main-wrapper *********************/
 /********************** band-wrapper *********************/
 /********************** tour-wrapper *********************/
