@@ -8,7 +8,7 @@ function navi() {
 	$('.header-wrapper .sub-wrap').slideUp(0)
 	$('.navi.more').on('click', openNavi)
 	$('.navi.more').on('mouseover', hoverNavi)
-	$('.header-wrapper').on('mouseleave', closeNavi)
+	$('.navi.more').on('mouseleave', closeNavi)
 	
 	function openNavi(){
 		$('.sub-wrap').stop().slideToggle(300)
