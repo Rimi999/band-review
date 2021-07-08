@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="../css/all.min.css">
 	<link rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/index.css">
+	<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 	<!-- header-wrapper -->
@@ -18,17 +19,27 @@
 				<div class="navi"><a href="#BAND">BAND</a></div>
 				<div class="navi"><a href="#TOUR">TOUR</a></div>
 				<div class="navi"><a href="#CONTACT">CONTACT</a></div>
-				<div class="navi">
-					<a href="#MORE">MORE<i class="bi bi-caret-down-fill"></i></a>
+				<div class="navi more">
+					<a href="#MORE">MORE <i class="fa fa-caret-down"></i></a>
+					<div class="sub-wrap">
+						<div class="sub">Merchandise</div>
+						<div class="sub">Extras</div>
+						<div class="sub">Media</div>
+					</div>
 				</div>
 			</div>
-			<div class=""><i class="fa fa-search"></i></div>
-			<div class="search"><i class="fa fa-search"></i></div>
+			<div class="navi-wrap2">
+				<div class="search"><i class="fa fa-search"></i></div>
+			</div>
 		</div>
 	</header>
 	
 	<!-- main-wrapper -->
-	<section class="main-wrapper"></section>
+	<section class="main-wrapper">
+		<div class="main-wrap">
+			<img src="../img/la.jpg" alt="main" class="img">
+		</div>
+	</section>
 	
 	<!-- band-wrapper -->
 	<section class="band-wrapper"></section>
@@ -44,5 +55,7 @@
 	
 	<!-- footer-wrapper -->
 	<footer class="footer-wrapper"></footer>
+
+	<script src="../js/index.js"></script>
 </body>
 </html>
