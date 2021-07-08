@@ -9,7 +9,8 @@ html, body {font-family: 'Lato', sans-serif; color: #000; height: 10000px;}
 .title-wrap h2.title {font-size: 1.75em; font-weight: 400; letter-spacing: 3px;}
 .title-wrap h3.sub {font-weight: 400; padding: 1em 0; color: #888; font-style: italic;}
 .cnt {line-height: 1.5; width: 100%; text-align: justify;}
-
+.btn {background-color: #000; color: #fff; padding: 0.75em 1.25em; margin-top: 1em;
+	border: none; cursor: pointer;}
 
 /********************** header-wrapper *********************/
 .header-wrapper {background-color: #000; color: #fff; box-shadow: 0px 0px 10px rgb(0,0,0 .8);
@@ -49,7 +50,8 @@ html, body {font-family: 'Lato', sans-serif; color: #000; height: 10000px;}
 .tour-wrapper .list-wrap .month {padding: 1em 0.75em; color: #888;}
 .tour-wrapper .list-wrap .month:nth-child(2) {border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;}
-.tour-wrapper .list-wrap .month:nth-child(3) {display: flex; justify-content: space-between; align-items: center;}
+.tour-wrapper .list-wrap .month:nth-child(3) {display: flex; justify-content: space-between;
+	align-items: center;}
 .tour-wrapper .list-wrap span {background-color: #f44336; color: #fff; padding: 0.25em;
 	margin-left: 0.5em;}
 .tour-wrapper .list-wrap .number {background-color: #000; border-radius: 50%; right: 0;
@@ -68,7 +70,16 @@ html, body {font-family: 'Lato', sans-serif; color: #000; height: 10000px;}
 
 
 /********************** contact-wrapper *********************/
-
+.contact-wrapper .desc-wrap {padding: 2em 0; display: flex; align-items: center;}
+.contact-wrapper .desc-wrap .info-wrap {width: 40%;}
+.contact-wrapper .info-wrap .info:nth-child(2) {padding: 0.5em 0;}
+.contact-wrapper .info-wrap .info i {margin-right: 1em; font-size: 0.75em; text-align: center;}
+.contact-wrapper .maill-wrap {width: 60%;}
+.contact-wrapper .maill-wrap input {padding: 0.75em; border: 1px solid #ddd;}
+.contact-wrapper .maill-wrap input[name="name"] {width: 44%; float: left;}
+.contact-wrapper .maill-wrap input[name="email"] {width: 44%; float: right; right: 0;}
+.contact-wrapper .maill-wrap input[name="message"] {width: 95.25%; margin-top: 1em;}
+.contact-wrapper .maill-wrap .bt-send {width: 100%;}
 
 
 /********************** loc-wrapper *********************/
