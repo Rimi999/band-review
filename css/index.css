@@ -30,7 +30,7 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 
 /********************** main-wrapper *********************/
 .main-wrapper {position: relative;}
-.main-wrapper .img {width: 100%; height: 100vh;}
+.main-wrapper .img {width: 100%;}
 .main-wrapper .title-wrap {color: #fff; position: absolute; bottom: 4em; width: 100%;}
 .main-wrapper .title-wrap h2 {padding-bottom: 1em; font-weight: 400;}
 .main-wrapper .title-wrap h3{font-size: 0.875em;}
@@ -75,10 +75,10 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 .contact-wrapper .info-wrap .info:nth-child(2) {padding: 0.5em 0;}
 .contact-wrapper .info-wrap .info i {margin-right: 1em; font-size: 0.75em; text-align: center;}
 .contact-wrapper .maill-wrap {width: 60%;}
-.contact-wrapper .maill-wrap input {padding: 0.75em; border: 1px solid #ddd;}
-.contact-wrapper .maill-wrap input[name="name"] {width: 44%; float: left;}
-.contact-wrapper .maill-wrap input[name="email"] {width: 44%; float: right; right: 0;}
-.contact-wrapper .maill-wrap input[name="message"] {width: 95.25%; margin-top: 1em;}
+.contact-wrapper .maill-wrap input {padding: 0.5em; border: 1px solid #ddd;}
+.contact-wrapper .maill-wrap input[name="name"] {width: 45%; float: left;}
+.contact-wrapper .maill-wrap input[name="email"] {width: 45%; float: right;}
+.contact-wrapper .maill-wrap input[name="message"] {width: 97%; margin-top: 1em;}
 .contact-wrapper .maill-wrap .bt-send {width: 100%;}
 
 
@@ -107,9 +107,21 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 	
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) { 
+	.header-wrap .navi-wrap {display: none;}
+	.band-wrapper .band-wrap {flex-wrap: wrap;}
+	.band-wrapper .band-wrap .band {width: 100%;}
+	.tour-wrapper .city-wrap {flex-wrap: wrap;}
+	.tour-wrapper .city-wrap .city {width: 100%;}
+	.tour-wrapper .city-wrap .city:nth-child(2) {margin: 1em 0;}
+	.contact-wrapper .desc-wrap {flex-direction: column;}
+	.contact-wrapper .desc-wrap .info-wrap {margin-bottom: 1em; width: 100%; text-align: center;}
+	.contact-wrapper .desc-wrap .maill-wrap {width: 100%;}
+	.contact-wrapper .maill-wrap input[name="name"] {width: 97.5%; float: none; }
+  .contact-wrapper .maill-wrap input[name="email"] {width: 97.5%; float: none}
+  .contact-wrapper .maill-wrap input[name="message"] {width: 97.5%;}
 }
 
 @media (max-width: 575px) {
-	
+	.main-wrapper .title-wrap {display: none;}
 }
