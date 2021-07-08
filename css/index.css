@@ -45,18 +45,32 @@ html, body {font-family: 'Lato', sans-serif; color: #000; height: 10000px;}
 /********************** tour-wrapper *********************/
 .tour-wrapper {background-color: #000;}
 .tour-wrapper .title-wrap .title {color: #fff;}
-.tour-wrapper .list-wrap {background-color: #fff;}
+.tour-wrapper .list-wrap {background-color: #fff; margin-top: 1em;}
 .tour-wrapper .list-wrap .month {padding: 1em 0.75em; color: #888;}
 .tour-wrapper .list-wrap .month:nth-child(2) {border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;}
-.tour-wrapper .list-wrap .month:nth-child(3) {display: flex; justify-content: space-between;
-	align-items: center;}
+.tour-wrapper .list-wrap .month:nth-child(3) {display: flex; justify-content: space-between; align-items: center;}
 .tour-wrapper .list-wrap span {background-color: #f44336; color: #fff; padding: 0.25em;
 	margin-left: 0.5em;}
 .tour-wrapper .list-wrap .number {background-color: #000; border-radius: 50%; right: 0;
 	padding: 0.25em 0.5em;}
 
+.tour-wrapper .city-wrap {padding: 2em 0; display: flex; justify-content: space-between;}
+.tour-wrapper .city-wrap .city {background-color: #fff; width: 33.3333%;}
+.tour-wrapper .city-wrap .city:nth-child(2) {margin: 0 2%;}
+.tour-wrapper .city-wrap .city img {width: 100%;}
+.tour-wrapper .city-wrap .city .desc {padding: 1em;}
+.city-wrap .city .desc .title {font-weight: 600;}
+.city-wrap .city .desc .date {color: #888; padding: 1em 0;}
+.city-wrap .city .desc .bt-buy {background-color: #000; color: #fff; padding: 0.75em 1.25em;
+	margin-top: 1em; border: none; cursor: pointer;}
+.city-wrap .city .desc .bt-buy:hover {background-color: #888; color: #000;}
+
+
 /********************** contact-wrapper *********************/
+
+
+
 /********************** loc-wrapper *********************/
 /********************** footer-wrapper *********************/
 
