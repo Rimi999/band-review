@@ -36,13 +36,26 @@ html, body {font-family: 'Lato', sans-serif; color: #000; height: 10000px;}
 
 
 /********************** band-wrapper *********************/
-.band-wrapper .band-wrap {display: flex; justify-content: space-between; padding: 2em 0;}
-.band-wrapper .band-wrap .title {padding: 1em 0;}
-.band-wrapper .band-wrap img {width: 60%;}
-
+.band-wrapper .band-wrap {display: flex; justify-content: space-around; padding: 2em 0;}
+.band-wrapper .band-wrap .band {display: flex; flex-direction: column; align-items: center;}
+.band-wrapper .band-wrap .band .title {padding: 1em;}
+.band-wrapper .band-wrap .band img {width: 60%;}
 
 
 /********************** tour-wrapper *********************/
+.tour-wrapper {background-color: #000;}
+.tour-wrapper .title-wrap .title {color: #fff;}
+.tour-wrapper .list-wrap {background-color: #fff;}
+.tour-wrapper .list-wrap .month {padding: 1em 0.75em; color: #888;}
+.tour-wrapper .list-wrap .month:nth-child(2) {border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;}
+.tour-wrapper .list-wrap .month:nth-child(3) {display: flex; justify-content: space-between;
+	align-items: center;}
+.tour-wrapper .list-wrap span {background-color: #f44336; color: #fff; padding: 0.25em;
+	margin-left: 0.5em;}
+.tour-wrapper .list-wrap .number {background-color: #000; border-radius: 50%; right: 0;
+	padding: 0.25em 0.5em;}
+
 /********************** contact-wrapper *********************/
 /********************** loc-wrapper *********************/
 /********************** footer-wrapper *********************/
