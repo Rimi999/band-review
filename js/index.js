@@ -3,7 +3,8 @@ init()
 function init() {
 	navi()
 	mNavi()
-	slide()
+	// slide()
+	modal()
 }
 
 function navi() {
@@ -32,10 +33,21 @@ function mNavi() {
 	}
 }
 
-function slide() {
-	var swiper = new swiper ('.main-wrapper .swiper-contanier',{
-		effect: "fade",
-		speed: 0,
-		autoplay: { delay : 5000 }
-	})
+// function slide() {
+// 	var swiper = new swiper ('.main-wrapper .swiper-contanier',{
+// 		effect: "fade",
+// 		speed: 0,
+// 		autoplay: { delay : 5000 }
+// 	})
+// }
+
+function modal() {
+	$('.tour-wrapper .bt-buy').on('click', openModal)
+	$('.modal-wrapper .bt-close').on('click', closeModal)
+	function openModal() {
+		$('.modal-wrapper').show()
+	}
+	function closeModal() {
+		$('.modal-wrapper').hide()
+	}
 }
