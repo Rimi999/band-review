@@ -93,7 +93,7 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 
 
 /********************** loc-wrapper *********************/
-.loc-wrapper .map-img {width: 100%;}
+.loc-wrapper .map-wrapper {width: 100%; height: 60vh;}
 
 
 /********************** footer-wrapper *********************/
