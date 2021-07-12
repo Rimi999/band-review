@@ -35,11 +35,12 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 	color: #fff; width: 100%;}
 
 /********************** main-wrapper *********************/
-.main-wrapper {position: relative;}
 .main-wrapper .img {width: 100%;}
-.main-wrapper .title-wrap {color: #fff; position: absolute; bottom: 4em; width: 100%;}
-.main-wrapper .title-wrap h2 {padding-bottom: 1em; font-weight: 400;}
-.main-wrapper .title-wrap h3{font-size: 0.875em;}
+.main-wrapper .swiper-wrapper .swiper-slide {position: relative;}
+.main-wrapper .swiper-slide .title-wrap {color: #fff; position: absolute; bottom: 4em;
+	width: 100%;}
+.main-wrapper .swiper-slide .title-wrap h2 {padding-bottom: 1em; font-weight: 400;}
+.main-wrapper .swiper-slide .title-wrap h3{font-size: 0.875em;}
 
 
 /********************** band-wrapper *********************/

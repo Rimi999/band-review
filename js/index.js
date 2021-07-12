@@ -3,6 +3,7 @@ init()
 function init() {
 	navi()
 	mNavi()
+	slide()
 }
 
 function navi() {
@@ -29,4 +30,12 @@ function mNavi() {
 	function openNavi(){
 		$('.m-sub-wrap').stop().slideToggle(300)
 	}
+}
+
+function slide() {
+	var swiper = new swiper ('.main-wrapper .swiper-contanier',{
+		effect: "fade",
+		speed: 0,
+		autoplay: { delay : 5000 }
+	})
 }
