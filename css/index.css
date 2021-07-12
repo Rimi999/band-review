@@ -12,20 +12,30 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 .btn {background-color: #000; color: #fff; padding: 0.75em 1.25em; margin-top: 1em;
 	border: none; cursor: pointer;}
 
+
 /********************** header-wrapper *********************/
-.header-wrapper {background-color: #000; color: #fff; box-shadow: 0px 0px 10px rgb(0,0,0 .8);
-	position: relative;}
-.header-wrapper .header-wrap {display: flex; justify-content: space-between; align-items: center;}
+.header-wrapper {background-color: #000; color: #fff; position: relative;}
+.header-wrapper .navi-wrapper {display: flex; justify-content: space-between; align-items: center;}
 .header-wrapper .navi-wrap {display: flex;}
-.header-wrapper .navi-wrap2 {display: flex;}
-.header-wrapper .navi-wrap .navi {padding: 1em 1.5em; cursor: pointer;}
-.header-wrapper .navi-wrap .navi:hover {background-color: #eee; color: #000;}
-.header-wrapper .search {padding: 1em 1.25em; cursor: pointer;}
-.header-wrapper .search:hover {background-color: #f44336; color: #fff; }
+.header-wrapper .navi-wrap .navi,
+.header-wrapper .m-navi-wrap .m-bar {padding: 1em 1.5em; cursor: pointer;}
+.header-wrapper .navi-wrap .navi:hover,
+.header-wrapper .navi-wrapper .m-bar:hover {background-color: #eee; color: #000;}
+.header-wrapper .navi-wrapper .search {padding: 1em 1.25em; cursor: pointer;}
+.header-wrapper .navi-wrapper .search:hover {background-color: #f44336; color: #fff;}
 .header-wrapper .sub-wrap {position: absolute; top: 51px; left: 405px; background-color: #fff;
-	box-shadow: 0px 0px 10px rgb(0, 0, 0 .5); z-index: 99;}
-.header-wrapper .sub-wrap .sub {padding: 1em;}
-.header-wrapper .sub-wrap .sub:hover {background-color: #eee;}
+	z-index: 99;}
+
+.header-wrap .navi-wrapper .m-bar {display: none;}
+.header-wrapper .m-navi-wrapper {position: relative;}
+.header-wrapper .m-navi-wrapper .m-sub-wrap {position: absolute; top: 51.2px; width: 100%;
+	z-index: 999; border: 1px solid red;}
+
+/*
+.header-wrapper .m-sub-wrap {background-color: #000; position: absolute; z-index: 99; top: 51.2px;
+	width: 100%;}
+.header-wrapper .m-sub-wrap .m-sub:hover {background-color: #eee; color: #000;}
+.header-wrapper .m-sub-wrap .m-sub a {padding-left: 0.5em;} */
 
 
 /********************** main-wrapper *********************/
@@ -99,21 +109,18 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 	
 }
 
-@media (max-width: 1199px) {
-	
-}
-
-@media (max-width: 991px) {
-	
-}
-
 @media (max-width: 767px) { 
-	.header-wrap .navi-wrap {display: none;}
+	.header-wrap .navi:not(:first-child) {display: none;}
+	.header-wrap .navi-wrapper .search {display: none;}
+	.header-wrap .navi-wrapper .m-bar {display: block;}
+
 	.band-wrapper .band-wrap {flex-wrap: wrap;}
 	.band-wrapper .band-wrap .band {width: 100%;}
+
 	.tour-wrapper .city-wrap {flex-wrap: wrap;}
 	.tour-wrapper .city-wrap .city {width: 100%;}
 	.tour-wrapper .city-wrap .city:nth-child(2) {margin: 1em 0;}
+
 	.contact-wrapper .desc-wrap {flex-direction: column;}
 	.contact-wrapper .desc-wrap .info-wrap {margin-bottom: 1em; width: 100%; text-align: center;}
 	.contact-wrapper .desc-wrap .maill-wrap {width: 100%;}
@@ -124,4 +131,5 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 
 @media (max-width: 575px) {
 	.main-wrapper .title-wrap {display: none;}
+	
 }

@@ -2,6 +2,7 @@ init()
 
 function init() {
 	navi()
+	mNavi()
 }
 
 function navi() {
@@ -19,4 +20,8 @@ function navi() {
 	function closeNavi(){
 		$('.sub-wrap').stop().slideUp(300)
 	}
+}
+
+function mNavi() {
+	$('.header-wrapper .m-sub-wrap').slideUp(0)
 }
