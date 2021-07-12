@@ -23,5 +23,10 @@ function navi() {
 }
 
 function mNavi() {
-	$('.header-wrapper .m-sub-wrap').slideUp(0)
+	$('.m-sub-wrap').slideUp(0)
+	$('.navi-wrapper .m-bar').on('click', openNavi)
+	
+	function openNavi(){
+		$('.m-sub-wrap').stop().slideToggle(300)
+	}
 }
