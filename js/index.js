@@ -3,7 +3,7 @@ init()
 function init() {
 	navi()
 	mNavi()
-	// slide()
+	slide()
 	modal()
 }
 
@@ -33,13 +33,24 @@ function mNavi() {
 	}
 }
 
+function slide() {
+	var swiper = new Swiper('.main-wrapper .swiper-container', {
+		spaceBetween: 30,
+		effect: "fade",
+		navigation: {
+			nextEl: '.main-wrapper .bt-next',
+			prevEl: '.main-wrapper .bt-prev',
+		},
+	})
+}
+
 function modal() {
 	$('.tour-wrapper .bt-buy').click(function(e) {
 		$('.modal-wrapper').addClass('active')
 		$('.modal-wrapper > .modal-wrap').css('transform')
 		$('.modal-wrapper > .modal-wrap').css('transform', 'translateY(0)')
 	})
-	
+
 	$('.modal-wrapper .bt-close').click(function(e) {
 		$('.modal-wrapper').removeClass('active')
 		$('.modal-wrapper .modal-wrap').css('transform', 'translateY(-100vh)')

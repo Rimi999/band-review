@@ -27,20 +27,23 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 .m-navi-wrapper .m-sub-wrap .m-sub:hover {background-color: #eee; color: #000;}
 .header-wrapper .navi-wrapper .search {padding: 1em 1.25em; cursor: pointer;}
 .header-wrapper .navi-wrapper .search:hover {background-color: #f44336; color: #fff;}
-.header-wrapper .sub-wrap {position: absolute; top: 51px; left: 405px; background-color: #fff;
-	z-index: 1;}
+.header-wrapper .sub-wrap {position: absolute; top: 49px; left: 405px; background-color: #fff;
+	z-index: 999;}
 
 .header-wrap .navi-wrapper .m-bar {display: none;}
 .m-navi-wrapper .m-sub-wrap {position: absolute; z-index: 1; background-color: #000;
 	color: #fff; width: 100%;}
 
 /********************** main-wrapper *********************/
-.main-wrapper .img {width: 100%;}
-.main-wrapper .swiper-wrapper .swiper-slide {position: relative;}
-.main-wrapper .swiper-slide .title-wrap {color: #fff; position: absolute; bottom: 4em;
-	width: 100%;}
-.main-wrapper .swiper-slide .title-wrap h2 {padding-bottom: 1em; font-weight: 400;}
-.main-wrapper .swiper-slide .title-wrap h3{font-size: 0.875em;}
+.main-wrapper {position: relative;}
+.main-wrapper .bt-swiper {color: #f9f9f9; font-weight: lighter; font-size: 5em; position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; cursor: pointer; user-select: none; outline: none; transition: all .5s; opacity: .1;}
+.main-wrapper .bt-swiper:hover {opacity: 1;}
+.main-wrapper .bt-swiper.bt-prev {left: 16px;}
+.main-wrapper .bt-swiper.bt-next {right: 16px;}
+.main-wrapper .slogan-wrap {position: absolute; color: #f9f9f9; left: 50%; transform: translateX(-50%); bottom: 32px; text-align: center;}
+.main-wrapper .slogan-wrap .title {font-size: 1.5em; margin-bottom: 0.75em;}
+.main-wrapper .slogan-wrap .content {font-weight: bold;}
+
 
 
 /********************** band-wrapper *********************/
