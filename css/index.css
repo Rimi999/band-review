@@ -101,6 +101,27 @@ html, body {font-family: 'Lato', sans-serif; color: #000;}
 .footer-wrapper .copyright a {text-decoration: underline;}
 
 
+/********************** modal-wrapper *********************/
+.modal-wrapper {background-color: rgba(0, 0, 0, .3); width: 100%; height: 100vh; position: fixed;
+	top: 0; left: 0; z-index: 10; display: none;}
+.modal-wrapper .modal-wrap {max-width: 900px; margin: 20vh auto; background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);}
+.modal-wrapper .modal-wrap .modal-top {background-color: #009688; color: #fff; position: relative;}
+.modal-wrapper .modal-top .bt-close {padding: 1em; color: #fff; position: absolute; right: 0;}
+.modal-wrapper .modal-top .bt-close:hover,
+.modal-wrapper .modal-body .bt-send:hover,
+.modal-wrapper .modal-bottom .bt-close:hover {background-color: #ddd; color: #000;}
+.modal-wrapper .modal-top .title {font-size: 2em; letter-spacing: 5px; text-align: center; padding: 1.5em 0;}
+.modal-wrapper .modal-body,
+.modal-wrapper .modal-bottom {padding: 1em;}
+.modal-wrapper .modal-body label {margin: 1em 0;}
+.modal-wrapper .modal-body input {border: 1px solid #ddd; width: 100%; padding: 0.5em; margin-bottom: 0.5em;}
+.modal-wrapper .modal-body .bt-send {background-color: #009688; color: #fff; padding: 1em 0;
+	width: 100%; margin-top: 0.5em}
+.modal-wrapper .modal-bottom {display: flex; justify-content: space-between; align-items: center;}
+.modal-wrapper .modal-bottom .bt-close {background-color: #f44336; color: #fff; padding: 1em;}
+.modal-wrapper .modal-bottom .help a{ color: #2196F3; text-decoration: underline;}
+
 /********************** 반응형 설정 *********************/
 @media (max-width: 1399px) {
 	
