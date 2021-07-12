@@ -33,21 +33,19 @@ function mNavi() {
 	}
 }
 
-// function slide() {
-// 	var swiper = new swiper ('.main-wrapper .swiper-contanier',{
-// 		effect: "fade",
-// 		speed: 0,
-// 		autoplay: { delay : 5000 }
-// 	})
-// }
-
 function modal() {
-	$('.tour-wrapper .bt-buy').on('click', openModal)
-	$('.modal-wrapper .bt-close').on('click', closeModal)
-	function openModal() {
-		$('.modal-wrapper').show()
-	}
-	function closeModal() {
-		$('.modal-wrapper').hide()
-	}
+	$('.tour-wrapper .bt-buy').click(function(e) {
+		$('.modal-wrapper').addClass('active')
+		$('.modal-wrapper > .modal-wrap').css('transform')
+		$('.modal-wrapper > .modal-wrap').css('transform', 'translateY(0)')
+	})
+	
+	$('.modal-wrapper .bt-close').click(function(e) {
+		$('.modal-wrapper').removeClass('active')
+		$('.modal-wrapper .modal-wrap').css('transform', 'translateY(-100vh)')
+	})
+	
+	$('.modal-wrapper .modal-wrap').click(function(e) {
+		e.stopPropagation()
+	})
 }
