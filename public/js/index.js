@@ -38,8 +38,6 @@ function sildeAbout() {
 
 function sildeTour() {
 	var swiper = new Swiper(".tour-wrapper .mySwiper", {
-		slidesPerView: 3,
-		spaceBetween: 30,
 		slidesPerGroup: 3,
 		loop: true,
 		loopFillGroupWithBlank: true,
@@ -47,6 +45,11 @@ function sildeTour() {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
+		breakpoints: {
+			768: {	slidesPerView: 3, spaceBetween: 30,},
+			575: { slidesPerView: 2, spaceBetween: 30 },
+			500: { slidesPerView: 1, spaceBetween: 30 }
+		}
 	});
 }
 

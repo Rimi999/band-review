@@ -6,7 +6,7 @@
 /********************** 글로벌 설정 *********************/
 html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
-.wrapper {max-width: 900px; margin: 0 auto; padding: 5em 1em;}
+.wrapper {max-width: 900px; margin: 0 auto; padding: 3em 1em;}
 
 .title-wrap {text-align: center;}
 .title-wrap h2.title {font-size: 1.75em; font-weight: 700; letter-spacing: 3px;}
@@ -14,17 +14,19 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** header-wrapper *********************/
-.header-wrapper {background-color: #fff; box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);	position: fixed; width: 100%; z-index: 99;}
+.header-wrapper {background-color: #fff; box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+	position: fixed; width: 100%; z-index: 99;}
 .header-wrapper .navi-wrapper {display: flex; justify-content: space-between; align-items: center;}
-.header-wrapper .logo {display: flex; align-items: center; padding: 0.25em;	font-size: 1.75em; font-weight: 700;}
+.header-wrapper .logo {display: flex; align-items: center; padding: 0.25em 0.5em;	font-size: 1.75em; font-weight: 700;}
 .header-wrapper .logo .img {margin-right: .25em;}
-.header-wrapper .navi-wrap, .header-wrapper .info-wrap {display: flex;}
+.header-wrapper .navi-wrap {display: flex;}
 .header-wrapper .navi-wrap .navi {padding: 1em 1.5em; font-weight: bold;}
+.header-wrapper .info-wrap {padding-right: 0.5em;}
 .header-wrapper .info-wrap i {padding: 1em;}
+.header-wrapper .info-wrap .bars {display: none;}
 .header-wrapper .navi-wrap .navi:hover,
 .header-wrapper .info-wrap i:hover,
 .header-wrapper .m-navi-wrap .m-navi:hover {color: #fff; background: linear-gradient(to right, #00e2d6, #00b5e6);}
-.header-wrapper .info-wrap .bars {display: none;}
 
 .header-wrapper .m-navi-wrap .m-navi {border-top: 1px solid #ccc;}
 .header-wrapper .m-navi-wrap .m-navi a {width: 100%; height: 100%; padding: 1em;}
@@ -32,8 +34,9 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 /********************** main-wrapper *********************/
 .main-wrapper {position: relative;}
-.main-wrapper .main-wrap video {width: 100%;}
-.main-wrapper .main-wrap .title-wrap {position: absolute; left: 50%; top: 45%; color: #fff;	transform: translateX(-50%); text-align: center;}
+.main-wrapper .main-wrap video {width: 100%; height: 90vh; object-fit: cover; }
+.main-wrapper .main-wrap .title-wrap {color: #fff; position: absolute; left: 50%; top: 45%; 
+	transform: translateX(-50%); text-align: center;}
 .main-wrapper .main-wrap .title-wrap .title {font-size: 3em; font-weight: 900; line-height: 130%;
 	text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);}
 
@@ -41,7 +44,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 /********************** about-wrapper *********************/
 .about-wrapper .about-wrap {display: flex; justify-content: space-around; align-items: center; padding: 2em 0;}
 .about-wrapper .about-wrap .swiper-container {width: 98%; margin-right: 2%;}
-.about-wrapper .about-wrap .cnt {width: 98%; margin-left: 2%;}
+.about-wrapper .about-wrap .cnt {width: 98%; margin-left: 2%; font-style: italic;}
 
 
 /********************** tour-wrapper *********************/
@@ -58,7 +61,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .tour-wrapper .swiper-container .swiper-btn {color: #fff; opacity: 0.5;}
 .tour-wrapper .swiper-container .swiper-btn:hover { opacity: 1;}
 .tour-wrapper .bt-more {text-align: center; padding-top: 1em;}
-.tour-wrapper .bt-more a {padding: 1em 3em; background-color: #fff;}
+.tour-wrapper .bt-more a {padding: 0.75em 2em; background-color: #fff; font-size: 1.25em;}
 .tour-wrapper .bt-more a:hover {background-color: #ccc;}
 
 
@@ -105,7 +108,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .modal-wrapper .modal-body .bt-send:hover {color: #fff; background: linear-gradient(to right, #00e2d6, #00b5e6);}
 
 .modal-wrapper .modal-bottom {display: flex; justify-content: flex-end;}
-.modal-wrapper .modal-bottom .help a{ color: #2196F3; text-decoration: underline;}
+.modal-wrapper .modal-bottom .help a {color: #2196F3; text-decoration: underline;}
 
 .modal-wrapper.active {display: block;}
 
@@ -119,8 +122,8 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 	.main-wrapper .main-wrap .title-wrap .title {font-size: 2em;}
 
 	.about-wrapper .about-wrap {display: block;}
-	.about-wrapper .about-wrap .swiper-container {margin: 0;}
-	.about-wrapper .about-wrap .cnt {margin: 0; padding-top: 2em;}
+	.about-wrapper .about-wrap .swiper-container {width: 100%; margin: 0 auto;}
+	.about-wrapper .about-wrap .cnt {width: 100%; margin: 2em 0 0;}
 
 	.tour-wrapper .city-wrap {flex-wrap: wrap;}
 	.tour-wrapper .city-wrap .city {width: 100%;}
