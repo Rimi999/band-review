@@ -46,9 +46,9 @@ function sildeTour() {
 			prevEl: ".swiper-button-prev",
 		},
 		breakpoints: {
-			768: {	slidesPerView: 3, spaceBetween: 30,},
-			575: { slidesPerView: 2, spaceBetween: 30 },
-			500: { slidesPerView: 1, spaceBetween: 30 }
+			768: {	slidesPerView: 3, spaceBetween: 15,},
+			575: { slidesPerView: 2, spaceBetween: 15 },
+			500: { slidesPerView: 1, spaceBetween: 15 }
 		}
 	});
 }

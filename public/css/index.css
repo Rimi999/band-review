@@ -39,10 +39,10 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 /********************** main-wrapper *********************/
 .main-wrapper {position: relative;}
 .main-wrapper .main-wrap video {width: 100%; height: 90vh; object-fit: cover; }
-.main-wrapper .main-wrap .title-wrap {color: #fff; position: absolute; left: 50%; top: 45%; 
+.main-wrapper .main-wrap .title-wrap {color: #00c8ff; position: absolute; left: 50%; top: 45%; 
 	transform: translateX(-50%); text-align: center;}
 .main-wrapper .main-wrap .title-wrap .title {font-size: 3em; font-weight: 900; line-height: 130%;
-	text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);}
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);}
 
 
 /********************** about-wrapper *********************/
@@ -52,7 +52,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** tour-wrapper *********************/
-.tour-wrapper {background-color: #00b5e6;}
+.tour-wrapper {background-color: #00e2d6;}
 .tour-wrapper .title-wrap .title {color: #fff;}
 .tour-wrapper .swiper-container {width: 100%; height: 100%; padding: 2em 0;}
 .tour-wrapper .swiper-container .swiper-slide {position: relative;}
@@ -75,19 +75,20 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .service-wrapper .icon-wrap .icon:hover {color: #000;}
 
 /********************** contact-wrapper *********************/
-.contact-wrapper {background-color: #00e2d6;}
+.contact-wrapper {background-color: #00b5e6;}
 .contact-wrapper .title {color: #fff;}
 .contact-wrapper .desc-wrap {padding: 2em 0; display: flex; align-items: center;}
-.contact-wrapper .desc-wrap .info-wrap {width: 40%;}
+.contact-wrapper .desc-wrap .info-wrap {width: 40%; font-size: 1.25em;}
 .contact-wrapper .info-wrap .info:nth-child(2) {padding: 0.5em 0;}
 .contact-wrapper .info-wrap .info i {margin-right: 1em; font-size: 0.75em; text-align: center;}
 .contact-wrapper .maill-wrap {width: 60%;}
 .contact-wrapper .maill-wrap input {padding: 0.5em; border: 1px solid #ddd; background-color: #fff;}
+.contact-wrapper .maill-wrap .top {display: flex; justify-content: space-between;}
 .contact-wrapper .maill-wrap input[name="name"] {width: 49%;}
-.contact-wrapper .maill-wrap input[name="email"] {width: 49%; margin-left: 1%;}
+.contact-wrapper .maill-wrap input[name="email"] {width: 49%;}
 .contact-wrapper .maill-wrap input[name="message"] {width: 100%; margin-top: 1em;}
 .contact-wrapper .maill-wrap .bt-send {margin-top: 1em; padding: 1em; width: 100%; display: inline-block;
-	background-color: #000; color: #fff;}
+	background-color: #333; color: #fff;}
 
 
 /********************** footer-wrapper *********************/
@@ -134,12 +135,14 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 	.about-wrapper .about-wrap .cnt {width: 100%; margin: 2em 0 0;}
 
 	.tour-wrapper .swiper-container .swiper-slide .des-wrap{background-color: #fff;}
-	
+		
 	.contact-wrapper .desc-wrap {flex-direction: column;}
 	.contact-wrapper .desc-wrap .info-wrap {margin-bottom: 1em; width: 100%; text-align: center;}
 	.contact-wrapper .desc-wrap .maill-wrap {width: 100%; padding-top: 2em;}
 }
 
 @media (max-width: 575px) {
+	.header-wrapper .logo {font-size: 1.25em;}
 	.main-wrapper .title-wrap {font-size: 1em;}
+	.title-wrap h2.title {font-size: 1.5em;}
 }
