@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700;900&display=swap');
 
 /* 
-#00e2d6, #00b5e6
+, #00b5e6
 */
 /********************** 글로벌 설정 *********************/
 html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
-.wrapper {max-width: 900px; margin: 0 auto; padding: 3em 1em;}
+.wrapper {max-width: 900px; margin: 0 auto; padding: 5em 1em;}
 
 .title-wrap {text-align: center;}
 .title-wrap h2.title {font-size: 1.75em; font-weight: 700; letter-spacing: 3px;}
 .cnt {line-height: 1.5; width: 100%; text-align: justify;}
+
+.bt-more {text-align: center; padding-top: 1em;}
+.bt-more a {padding: 0.75em 2em; background-color: #fff; font-size: 1.25em; text-align: center;}
+.bt-more a:hover {background-color: #ccc;}
 
 
 /********************** header-wrapper *********************/
@@ -48,11 +52,12 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** tour-wrapper *********************/
-.tour-wrapper {background: linear-gradient(to right, #00e2d6, #00b5e6);}
+.tour-wrapper {background-color: #00b5e6;}
 .tour-wrapper .title-wrap .title {color: #fff;}
 .tour-wrapper .swiper-container {width: 100%; height: 100%; padding: 2em 0;}
 .tour-wrapper .swiper-container .swiper-slide {position: relative;}
-.tour-wrapper .swiper-container .swiper-slide .des-wrap {position: absolute; bottom: 0; padding: .8em; width: 100%; background-color: rgba(255, 255, 255, .75);}
+.tour-wrapper .swiper-container .swiper-slide .des-wrap {position: absolute; bottom: 0;
+	padding: .75em; width: 100%; background-color: rgba(255, 255, 255, .8);}
 .tour-wrapper .swiper-container .swiper-slide:hover .des-wrap {background-color: #fff;}
 .tour-wrapper .swiper-slide .des-wrap .title {font-size: 1.25em; font-weight: 700;}
 .tour-wrapper .swiper-slide .des-wrap .way {padding: 0.75em 0;}
@@ -60,30 +65,33 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .tour-wrapper .swiper-slide img {display: block; object-fit: cover; cursor: pointer;}
 .tour-wrapper .swiper-container .swiper-btn {color: #fff; opacity: 0.5;}
 .tour-wrapper .swiper-container .swiper-btn:hover { opacity: 1;}
-.tour-wrapper .bt-more {text-align: center; padding-top: 1em;}
-.tour-wrapper .bt-more a {padding: 0.75em 2em; background-color: #fff; font-size: 1.25em;}
-.tour-wrapper .bt-more a:hover {background-color: #ccc;}
 
+
+/********************** service-wrapper *********************/
+.service-wrapper .icon-wrap {display: flex; justify-content: space-around; color: #aaa; flex-wrap: wrap;}
+.service-wrapper .icon-wrap .icon {padding: 1em; margin: 2em 0; text-align: center; cursor: pointer;}
+.service-wrapper .icon-wrap .icon i {font-size: 2.5em; padding: 1em;}
+.service-wrapper .icon-wrap .icon .title {font-size: 1.25em; padding-bottom: 1em;}
+.service-wrapper .icon-wrap .icon:hover {color: #000;}
 
 /********************** contact-wrapper *********************/
+.contact-wrapper {background-color: #00e2d6;}
+.contact-wrapper .title {color: #fff;}
 .contact-wrapper .desc-wrap {padding: 2em 0; display: flex; align-items: center;}
 .contact-wrapper .desc-wrap .info-wrap {width: 40%;}
 .contact-wrapper .info-wrap .info:nth-child(2) {padding: 0.5em 0;}
 .contact-wrapper .info-wrap .info i {margin-right: 1em; font-size: 0.75em; text-align: center;}
 .contact-wrapper .maill-wrap {width: 60%;}
-.contact-wrapper .maill-wrap input {padding: 0.5em; border: 1px solid #ddd;}
-.contact-wrapper .maill-wrap input[name="name"] {width: 45%; float: left;}
-.contact-wrapper .maill-wrap input[name="email"] {width: 45%; float: right;}
-.contact-wrapper .maill-wrap input[name="message"] {width: 97%; margin-top: 1em;}
-.contact-wrapper .maill-wrap .bt-send {width: 100%;}
-
-
-/********************** loc-wrapper *********************/
-.loc-wrapper .map-wrapper {width: 100%; height: 60vh;}
+.contact-wrapper .maill-wrap input {padding: 0.5em; border: 1px solid #ddd; background-color: #fff;}
+.contact-wrapper .maill-wrap input[name="name"] {width: 49%;}
+.contact-wrapper .maill-wrap input[name="email"] {width: 49%; margin-left: 1%;}
+.contact-wrapper .maill-wrap input[name="message"] {width: 100%; margin-top: 1em;}
+.contact-wrapper .maill-wrap .bt-send {margin-top: 1em; padding: 1em; width: 100%; display: inline-block;
+	background-color: #000; color: #fff;}
 
 
 /********************** footer-wrapper *********************/
-.footer-wrapper {text-align: center; color: #888; }
+.footer-wrapper {text-align: center; background-color: #333; color: #fff; padding: 2em 0;}
 .footer-wrapper .sns-wrap {display: flex; justify-content: center; margin-bottom: 1em; font-size: 1.25em;}
 .footer-wrapper .sns-wrap a {padding: 0 0.125em;}
 .footer-wrapper .sns-wrap a:hover {color: #ddd;}
@@ -125,19 +133,13 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 	.about-wrapper .about-wrap .swiper-container {width: 100%; margin: 0 auto;}
 	.about-wrapper .about-wrap .cnt {width: 100%; margin: 2em 0 0;}
 
-	.tour-wrapper .city-wrap {flex-wrap: wrap;}
-	.tour-wrapper .city-wrap .city {width: 100%;}
-	.tour-wrapper .city-wrap .city:nth-child(2) {margin: 1em 0;}
-
+	.tour-wrapper .swiper-container .swiper-slide .des-wrap{background-color: #fff;}
+	
 	.contact-wrapper .desc-wrap {flex-direction: column;}
 	.contact-wrapper .desc-wrap .info-wrap {margin-bottom: 1em; width: 100%; text-align: center;}
-	.contact-wrapper .desc-wrap .maill-wrap {width: 100%;}
-	.contact-wrapper .maill-wrap input[name="name"] {width: 97.5%; float: none; }
-  .contact-wrapper .maill-wrap input[name="email"] {width: 97.5%; float: none}
-  .contact-wrapper .maill-wrap input[name="message"] {width: 97.5%;}
+	.contact-wrapper .desc-wrap .maill-wrap {width: 100%; padding-top: 2em;}
 }
 
 @media (max-width: 575px) {
-	.main-wrapper .title-wrap {display: none;}
-	
+	.main-wrapper .title-wrap {font-size: 1em;}
 }
