@@ -2,51 +2,56 @@ init()
 
 function init() {
 	navi()
-	mNavi()
-	slide()
+	sildeAbout()
+	sildeTour()
 	modal()
-	map()
 }
 
 function navi() {
-	$('.header-wrapper .sub-wrap').slideUp(0)
-	$('.navi.more').on('click', openNavi)
-	$('.navi.more').on('mouseover', hoverNavi)
-	$('.navi.more').on('mouseleave', closeNavi)
+	$('.m-navi-wrapper').slideUp(0)
+	$('.header-wrapper .bars').on('click', onNaviClick)
+	$('.m-navi-wrapper').on('mouseleave', onNaviLeave)
 	
-	function openNavi(){
-		$('.sub-wrap').stop().slideToggle(300)
+	function onNaviClick() {
+		$('.m-navi-wrapper').stop().slideToggle(300)
 	}
-	function hoverNavi(){
-		$('.sub-wrap').stop().slideDown(300)
-	}
-	function closeNavi(){
-		$('.sub-wrap').stop().slideUp(300)
+	function onNaviLeave() {
+		$('.m-navi-wrapper').stop().slideUp(300)
 	}
 }
 
-function mNavi() {
-	$('.m-sub-wrap').slideUp(0)
-	$('.navi-wrapper .m-bar').on('click', openNavi)
-	
-	function openNavi(){
-		$('.m-sub-wrap').stop().slideToggle(300)
-	}
+function sildeAbout() {
+	var swiper = new Swiper('.about-wrapper .swiper-container', 
+	{ pagination: '.swiper-pagination', 
+		observer: true, 
+		observeParents: true,
+		loop: true,
+		autoplay: {delay: 2500, disableOnInteraction: false},
+	});
+	$('.swiper-slide').on('mouseover', function(){
+		swiper.autoplay.stop();
+	});
+	$('.swiper-slide').on('mouseout', function(){
+		swiper.autoplay.start();
+	});
 }
 
-function slide() {
-	var swiper = new Swiper('.main-wrapper .swiper-container', {
+function sildeTour() {
+	var swiper = new Swiper(".tour-wrapper .mySwiper", {
+		slidesPerView: 3,
 		spaceBetween: 30,
-		effect: "fade",
+		slidesPerGroup: 3,
+		loop: true,
+		loopFillGroupWithBlank: true,
 		navigation: {
-			nextEl: '.main-wrapper .bt-next',
-			prevEl: '.main-wrapper .bt-prev',
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
 		},
-	})
+	});
 }
 
 function modal() {
-	$('.tour-wrapper .bt-buy').click(function(e) {
+	$('.tour-wrapper .swiper-slide').click(function(e) {
 		$('.modal-wrapper').addClass('active')
 		$('.modal-wrapper > .modal-wrap').css('transform')
 		$('.modal-wrapper > .modal-wrap').css('transform', 'translateY(0)')
@@ -60,14 +65,4 @@ function modal() {
 	$('.modal-wrapper .modal-wrap').click(function(e) {
 		e.stopPropagation()
 	})
-}
-
-function map() {
-	var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-	var options = { //지도를 생성할 때 필요한 기본 옵션
-		center: new kakao.maps.LatLng(37.55524094809751, 126.9369011148819), //지도의 중심좌표.
-		level: 3 //지도의 레벨(확대, 축소 정도)
-	};
-
-var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 }
