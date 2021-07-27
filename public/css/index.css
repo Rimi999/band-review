@@ -91,11 +91,11 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** footer-wrapper *********************/
-.footer-wrapper {text-align: center; background-color: #333; color: #fff; padding: 2em 0;}
-.footer-wrapper .sns-wrap {display: flex; justify-content: center; margin-bottom: 1em; font-size: 1.25em;}
-.footer-wrapper .sns-wrap a {padding: 0 0.125em;}
-.footer-wrapper .sns-wrap a:hover {color: #ddd;}
-.footer-wrapper .copyright a {text-decoration: underline;}
+.footer-wrapper {text-align: center; background-color: #333; color: #aaa; padding: 2em 0;}
+.footer-wrapper .sns-wrap {display: flex; justify-content: center; font-size: 2em;}
+.footer-wrapper .sns-wrap a {padding: 0 1em 0.75em}
+.footer-wrapper .sns-wrap a:hover {color: #fff;}
+.footer-wrapper .copyright {font-weight: lighter;}
 
 
 /********************** modal-wrapper *********************/
