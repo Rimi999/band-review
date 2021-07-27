@@ -10,6 +10,7 @@ function init() {
 function navi() {
 	$('.m-navi-wrapper').slideUp(0)
 	$('.header-wrapper .bars').on('click', onNaviClick)
+	$('.m-navi-wrapper .m-navi').on('click', onNaviLeave)
 	$('.m-navi-wrapper').on('mouseleave', onNaviLeave)
 	
 	function onNaviClick() {
