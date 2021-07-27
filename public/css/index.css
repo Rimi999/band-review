@@ -5,7 +5,6 @@
 */
 /********************** 글로벌 설정 *********************/
 html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
-
 .wrapper {max-width: 900px; margin: 0 auto; padding: 5em 1em;}
 
 .title-wrap {text-align: center;}
@@ -24,7 +23,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .header-wrapper .logo {display: flex; align-items: center; padding: 0.25em 0.5em;	font-size: 1.75em; font-weight: 700;}
 .header-wrapper .logo .img {margin-right: .25em;}
 .header-wrapper .navi-wrap {display: flex;}
-.header-wrapper .navi-wrap .navi {padding: 1em 1.5em; font-weight: bold;}
+.header-wrapper .navi-wrap .navi a {padding: 1em 1.5em; font-weight: bold;}
 .header-wrapper .info-wrap {padding-right: 0.5em;}
 .header-wrapper .info-wrap i {padding: 1em;}
 .header-wrapper .info-wrap .bars {display: none;}
