@@ -38,18 +38,19 @@ function sildeAbout() {
 }
 
 function sildeTour() {
-	var swiper = new Swiper(".tour-wrapper .mySwiper", {
-		
+	var swiper = new Swiper(".mySwiper", {
+		slidesPerView: 3,
+		spaceBetween: 15,
+		slidesPerGroup: 3,
 		loop: true,
 		loopFillGroupWithBlank: true,
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
-		breakpoints: {
-			1399: { slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 15, },
-			768: { slidesPerView: 2, slidesPerGroup: 2,spaceBetween: 15 },
-			575: { slidesPerView: 1, slidesPerGroup: 1,spaceBetween: 15 },
+		break: {
+			767 : { slidesPerView : 2, slidesPerGroup: 2 },
+			575 : { slidesPerView : 1, slidesPerGroup: 1 },
 		}
 	});
 }
