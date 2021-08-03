@@ -50,7 +50,7 @@ function sildeTour() {
 		},
 		break: {
 			767 : { slidesPerView : 2, slidesPerGroup: 2 },
-			575 : { slidesPerView : 1, slidesPerGroup: 1 },
+			575 : { slidesPerView : 1, slidesPerGroup: 1 }
 		}
 	});
 }
