@@ -11,7 +11,7 @@ function navi() {
 	$('.m-navi-wrapper').slideUp(0)
 	$('.header-wrapper .bars').on('click', onNaviClick)
 	$('.m-navi-wrapper .m-navi').on('click', onNaviLeave)
-	$('.m-navi-wrapper').on('mouseleave', onNaviLeave)
+	$('.header-wrapper').on('mouseleave', onNaviLeave)
 	
 	function onNaviClick() {
 		$('.m-navi-wrapper').stop().slideToggle(300)
@@ -39,9 +39,6 @@ function sildeAbout() {
 
 function sildeTour() {
 	var swiper = new Swiper(".mySwiper", {
-		slidesPerView: 3,
-		spaceBetween: 15,
-		slidesPerGroup: 3,
 		loop: true,
 		loopFillGroupWithBlank: true,
 		navigation: {
@@ -49,8 +46,9 @@ function sildeTour() {
 			prevEl: ".swiper-button-prev",
 		},
 		breakpoints: {
-			767 : { slidesPerView : 2, slidesPerGroup: 2 },
-			575 : { slidesPerView : 1, slidesPerGroup: 1 }
+			1399 : { slidesPerView : 3, slidesPerGroup: 3, spaceBetween: 15 },
+			767 : { slidesPerView : 2, slidesPerGroup: 2, spaceBetween: 15 },
+			575 : { slidesPerView : 1, slidesPerGroup: 1, spaceBetween: 15 }
 		}
 	});
 }

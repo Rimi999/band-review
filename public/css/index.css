@@ -17,8 +17,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** header-wrapper *********************/
-.header-wrapper {background-color: #fff; box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
-	position: fixed; width: 100%; z-index: 99;}
+.header-wrapper {position: fixed; width: 100%; z-index: 99; background-color: #fff; box-shadow: 5px 5px 5px rgba(0, 0, 0, .25); color: #222; }
 .header-wrapper .navi-wrapper {display: flex; justify-content: space-between; align-items: center;}
 .header-wrapper .logo {display: flex; align-items: center; padding: 0.25em 0.5em;	font-size: 1.75em; font-weight: 700;}
 .header-wrapper .logo .img {margin-right: .25em;}
@@ -31,6 +30,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .header-wrapper .info-wrap i:hover,
 .header-wrapper .m-navi-wrap .m-navi:hover {color: #fff; background: linear-gradient(to right, #00e2d6, #00b5e6);}
 
+.header-wrapper .m-navi-wrap {background-color: #fff;}
 .header-wrapper .m-navi-wrap .m-navi {border-top: 1px solid #ccc;}
 .header-wrapper .m-navi-wrap .m-navi a {width: 100%; height: 100%; padding: 1em;}
 
