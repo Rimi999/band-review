@@ -48,7 +48,7 @@ function sildeTour() {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
 		},
-		break: {
+		breakpoints: {
 			767 : { slidesPerView : 2, slidesPerGroup: 2 },
 			575 : { slidesPerView : 1, slidesPerGroup: 1 }
 		}
