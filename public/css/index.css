@@ -17,10 +17,10 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** header-wrapper *********************/
-.header-wrapper {position: fixed; width: 100%; z-index: 99; background-color: #fff; box-shadow: 5px 5px 5px rgba(0, 0, 0, .25); color: #222; }
+.header-wrapper {position: fixed; width: 100%; z-index: 99; color: #fff; text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);}
 .header-wrapper .navi-wrapper {display: flex; justify-content: space-between; align-items: center;}
-.header-wrapper .logo {display: flex; align-items: center; padding: 0.25em 0.5em;	font-size: 1.75em; font-weight: 700;}
-.header-wrapper .logo .img {margin-right: .25em;}
+.header-wrapper .logo-wrap {display: flex; align-items: center; padding: 0.25em 0.5em;	font-size: 1.75em; font-weight: 700;}
+.header-wrapper .logo-wrap .img {margin-right: .25em;}
 .header-wrapper .navi-wrap {display: flex;}
 .header-wrapper .navi-wrap .navi a {padding: 1em 1.5em; font-weight: bold;}
 .header-wrapper .info-wrap {padding-right: 0.5em;}
@@ -35,12 +35,13 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .header-wrapper .m-navi-wrap .m-navi {border-top: 1px solid #ccc;}
 .header-wrapper .m-navi-wrap .m-navi a {width: 100%; height: 100%; padding: 1em;}
 
+.header-wrapper.active {background-color: #fff; box-shadow: 5px 5px 5px rgba(0, 0, 0, .25); color: #222; text-shadow: none}
+
 
 /********************** main-wrapper *********************/
 .main-wrapper {position: relative;}
 .main-wrapper .main-wrap video {width: 100%; height: 90vh; object-fit: cover; }
-.main-wrapper .main-wrap .title-wrap {color: #00c8ff; position: absolute; left: 50%; top: 45%; 
-	transform: translateX(-50%); text-align: center;}
+.main-wrapper .main-wrap .title-wrap {color: #fff; position: absolute; left: 50%; top: 40%; transform: translateX(-50%); text-align: center;}
 .main-wrapper .main-wrap .title-wrap .title {font-size: 3em; font-weight: 900; line-height: 130%;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);}
 
@@ -52,7 +53,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** tour-wrapper *********************/
-.tour-wrapper {background-color: #7efff9;}
+.tour-wrapper {background-color: #80e3ff;}
 .tour-wrapper .swiper-container {width: 100%; height: 100%; padding: 2em 0;}
 .tour-wrapper .swiper-container .swiper-slide {position: relative;}
 .tour-wrapper .swiper-container .swiper-slide .des-wrap {position: absolute; bottom: 0;	padding: 1.5em 1em; width: 100%; background-color: rgba(255, 255, 255, .8);}
@@ -85,15 +86,17 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .contact-wrapper .maill-wrap input[name="name"] {width: 49%;}
 .contact-wrapper .maill-wrap input[name="email"] {width: 49%;}
 .contact-wrapper .maill-wrap input[name="message"] {width: 100%; margin-top: 1em;}
-.contact-wrapper .maill-wrap .bt-send {margin-top: 1em; padding: 1em; width: 100%; display: inline-block;
-	background-color: #333; color: #fff;}
+.contact-wrapper .maill-wrap .bt-send {margin-top: 1em; padding: 1em; width: 100%; display: inline-block;	background-color: #333; color: #fff;}
 
 
 /********************** footer-wrapper *********************/
-.footer-wrapper {display: flex; justify-content: space-between; align-items: center; background-color: #333; color: #aaa; padding: 2em 1em;}
-.footer-wrapper .sns-wrap {display: flex; justify-content: center; font-size: 1.5em;}
-.footer-wrapper .sns-wrap a:hover {color: #fff;}
-.footer-wrapper .copy {font-weight: lighter;}
+.footer-wrapper {background-color: #333; color: #aaa;}
+.footer-wrapper .footer-wrap {display: flex; justify-content: space-between; align-items: center; padding: 2em 1em;}
+.footer-wrapper .footer-wrap .logo {font-size: 1.5em;}
+.footer-wrapper .footer-wrap .sns-wrap {display: flex; justify-content: center; font-size: 1.5em;}
+.footer-wrapper .footer-wrap .sns-wrap a:hover {color: #fff;}
+.footer-wrapper .footer-wrap .sns-wrap a:nth-child(2) {padding: 0 0.5em;}
+.footer-wrapper .copy {padding-top: 0.5em;}
 
 
 /********************** modal-wrapper *********************/
@@ -103,7 +106,6 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .modal-wrapper .modal-top .bt-close {padding: 1em; color: #fff; position: absolute; right: 0;}
 .modal-wrapper .modal-top .bt-close:hover {color: #000;}
 .modal-wrapper .modal-top .title {font-size: 2em; letter-spacing: 5px; text-align: center; padding: 1.5em 0;}
-
 .modal-wrapper .modal-body, .modal-wrapper .modal-bottom {padding: 1em;}
 .modal-wrapper .modal-body input,
 .modal-wrapper .modal-body select {border: 1px solid #aaa; width: 100%; padding: 0.5em; margin-bottom: 1em;}
@@ -112,7 +114,6 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 .modal-wrapper .modal-body .person-wrap input:nth-child(3) {margin-left: 2%;}
 .modal-wrapper .modal-body .bt-send {background-color: #ddd; padding: 1em 0; width: 100%; margin-top: 0.5em}
 .modal-wrapper .modal-body .bt-send:hover {color: #fff; background: linear-gradient(to right, #00e2d6, #00b5e6);}
-
 .modal-wrapper .modal-bottom {display: flex; justify-content: flex-end;}
 .modal-wrapper .modal-bottom .help a {color: #2196F3; text-decoration: underline;}
 
@@ -125,24 +126,19 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 	.header-wrapper .info-wrap .fa-search {display: none;}
 	.header-wrapper .m-navi-wrap {display: block;}
 	.header-wrapper .info-wrap .bars {display: block;}
-
 	.main-wrapper .main-wrap .title-wrap .title {font-size: 2em;}
-
 	.about-wrapper .about-wrap {display: block;}
 	.about-wrapper .about-wrap .swiper-container {width: 100%; margin: 0 auto;}
 	.about-wrapper .about-wrap .cnt {width: 100%; margin: 2em 0 0;}
-
 	.tour-wrapper .swiper-container .swiper-slide .des-wrap {background-color: #fff;}
-
 	.service-wrapper .icon-wrap .icon .title {font-size: 1em;}
-		
 	.contact-wrapper .desc-wrap {flex-direction: column;}
 	.contact-wrapper .desc-wrap .info-wrap {margin-bottom: 1em; width: 100%; text-align: center;}
 	.contact-wrapper .desc-wrap .maill-wrap {width: 100%; padding-top: 2em;}
 }
 
 @media (max-width: 575px) {
-	.header-wrapper .logo {font-size: 1.25em;}
+	.header-wrapper .logo-wrap {font-size: 1.25em;}
 	.main-wrapper .title-wrap {font-size: 1em;}
 	.title-wrap h2.title {font-size: 1.5em;}
 }

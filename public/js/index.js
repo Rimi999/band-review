@@ -15,10 +15,21 @@ function navi() {
 	
 	function onNaviClick() {
 		$('.m-navi-wrapper').stop().slideToggle(300)
+		$('.header-wrapper').addClass('active');
 	}
 	function onNaviLeave() {
 		$('.m-navi-wrapper').stop().slideUp(300)
+		$('.header-wrapper').removeClass('active');
 	}
+
+	new WOW().init()
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 50) {
+			$('.header-wrapper').addClass('active');
+		} else {
+			$('.header-wrapper').removeClass('active');
+		}
+	});
 }
 
 function sildeAbout() {
@@ -38,7 +49,7 @@ function sildeAbout() {
 }
 
 function sildeTour() {
-	var swiper = new Swiper(".mySwiper", {
+	var swiper = new Swiper(".tour-wrapper .mySwiper", {
 		loop: true,
 		loopFillGroupWithBlank: true,
 		navigation: {
