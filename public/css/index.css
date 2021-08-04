@@ -5,7 +5,7 @@
 */
 /********************** 글로벌 설정 *********************/
 html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
-.wrapper {max-width: 900px; margin: 0 auto; padding: 5em 1em;}
+.wrapper {max-width: 900px; margin: 0 auto; padding: 3em 1em;}
 
 .title-wrap {text-align: center;}
 .title-wrap h2.title {font-size: 1.75em; font-weight: 700; letter-spacing: 3px;}
@@ -13,7 +13,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 .bt-more {text-align: center; padding-top: 1em;}
 .bt-more a {padding: 0.75em 2em; background-color: #fff; font-size: 1.25em; text-align: center;}
-.bt-more a:hover {background-color: #ccc;}
+.bt-more a:hover {background-color: #888;}
 
 
 /********************** header-wrapper *********************/
@@ -53,7 +53,7 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** tour-wrapper *********************/
-.tour-wrapper {background-color: #80e3ff;}
+.tour-wrapper {background-color: #c6e8f7;}
 .tour-wrapper .swiper-container {width: 100%; height: 100%; padding: 2em 0;}
 .tour-wrapper .swiper-container .swiper-slide {position: relative;}
 .tour-wrapper .swiper-container .swiper-slide .des-wrap {position: absolute; bottom: 0;	padding: 1.5em 1em; width: 100%; background-color: rgba(255, 255, 255, .8);}
@@ -67,21 +67,27 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 
 
 /********************** service-wrapper *********************/
-.service-wrapper .icon-wrap {display: flex; justify-content: space-around; color: #aaa; flex-wrap: wrap;}
+.service-wrapper {height: 100%; color: #fff;
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	backdrop-filter: blur(6px);}
+.service-wrapper .icon-wrap {display: flex; justify-content: space-around; flex-wrap: wrap;}
 .service-wrapper .icon-wrap .icon {padding: 1em; margin: 2em 0; text-align: center; cursor: pointer;}
 .service-wrapper .icon-wrap .icon i {font-size: 2.5em; padding: 1em;}
 .service-wrapper .icon-wrap .icon .title {font-size: 1.25em; padding-bottom: 1em;}
-.service-wrapper .icon-wrap .icon:hover {color: #000;}
+.service-wrapper .icon-wrap .icon:hover {color: #000; background-color: rgba(255, 255, 255, .5);}
 
 
 /********************** contact-wrapper *********************/
-.contact-wrapper {background-color: #80e3ff;}
 .contact-wrapper .desc-wrap {padding: 2em 0; display: flex; align-items: center;}
 .contact-wrapper .desc-wrap .info-wrap {width: 40%; font-size: 1.25em;}
 .contact-wrapper .info-wrap .info:nth-child(2) {padding: 0.5em 0;}
 .contact-wrapper .info-wrap .info i {margin-right: 1em; font-size: 0.75em; text-align: center;}
 .contact-wrapper .maill-wrap {width: 60%;}
-.contact-wrapper .maill-wrap input {padding: 0.5em; border: 1px solid #ddd; background-color: #fff;}
+.contact-wrapper .maill-wrap input {padding: 0.5em; border: 1px solid #ddd; background-color: #eee;}
 .contact-wrapper .maill-wrap .top {display: flex; justify-content: space-between;}
 .contact-wrapper .maill-wrap input[name="name"] {width: 49%;}
 .contact-wrapper .maill-wrap input[name="email"] {width: 49%;}
@@ -133,8 +139,8 @@ html, body {font-family: 'Noto Sans KR', sans-serif; color: #000;}
 	.tour-wrapper .swiper-container .swiper-slide .des-wrap {background-color: #fff;}
 	.service-wrapper .icon-wrap .icon .title {font-size: 1em;}
 	.contact-wrapper .desc-wrap {flex-direction: column;}
-	.contact-wrapper .desc-wrap .info-wrap {margin-bottom: 1em; width: 100%; text-align: center;}
-	.contact-wrapper .desc-wrap .maill-wrap {width: 100%; padding-top: 2em;}
+	.contact-wrapper .desc-wrap .info-wrap {margin: 2em 0; width: 100%; ;}
+	.contact-wrapper .desc-wrap .maill-wrap {width: 100%;}
 }
 
 @media (max-width: 575px) {
